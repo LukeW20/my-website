@@ -1,0 +1,32 @@
+html, body {
+	height: 100%;
+}
+
+#footer {
+	height: 100px;
+	background-color: #2C8C99;
+}
+
+#footercontent {
+	color: #fdfdff;
+	margin: auto;
+	width: 240px;
+	height: 55px;
+	padding: 5px;
+}
+
+#footercontent a {
+	color: #fdfdff;
+}
+
+#footercontent p {
+	text-align: center;
+}
+
+#copyright {
+	color: #fdfdff;
+	margin: auto;
+	width: 240px;
+	height: 22px;
+	text-align: center;
+}
