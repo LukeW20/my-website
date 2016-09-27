@@ -455,6 +455,10 @@ body {
 	margin: 0 0 0 15px;
 }
 
+#articalpagecontent p {
+	margin: 15px 15px 0 15px;
+}
+
 #backbutton {
 	width: 50px;
 	height: 100px;
