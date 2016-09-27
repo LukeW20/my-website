@@ -418,6 +418,10 @@ body {
 	border-radius: 25px;
 }
 
+#articalpageimg img{
+	border-radius: 25px;
+}
+
 #articalpagecontent {
 	border: 3px solid black;
 	width: 894px;
@@ -425,6 +429,10 @@ body {
 	margin: auto;
 	margin-top: 20px;
 	border-radius: 25px;
+}
+
+#articalpagecontent h3 {
+	margin: 0 0 0 15px;
 }
 
 #backbutton {
