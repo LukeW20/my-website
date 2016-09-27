@@ -16,6 +16,10 @@ body {
 	padding: 5px;
 	margin: 5px;
 	float: left;
+	-webkit-border-radius: 40px;
+	-moz-border-radius: 40px;
+	-m-border-radius: 40px;
+	-o-border-radius: 40px;
 	border-radius: 40px;
 }
 
@@ -42,9 +46,13 @@ body {
 	float: left;
 	color: #FDFDFF;
 	background-color: #2c8c99;
-	border-radius: 10px;
 	text-align: center;
 	font-weight: bold;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-m-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
 }
 
 #navbar a:hover {
