@@ -401,3 +401,51 @@ body {
 .blogtext a {
 	text-decoration: none;
 }
+
+#articalcontainer {
+	width: 900px;
+	height: 882px;
+	margin: auto;
+	overflow: auto;
+}
+
+#articalpageimg {
+	border: 3px solid black;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 25px;
+}
+
+#articalpagecontent {
+	border: 3px solid black;
+	width: 894px;
+	height: 600px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 25px;
+}
+
+#backbutton {
+	width: 50px;
+	height: 100px;
+	margin: auto;
+}
+
+#backbutton a {
+	border: 3px solid black;
+	height: 25px;
+	width: 80px;
+	margin: auto;
+	padding: 10px;
+	color: #FDFDFF;
+	background-color: #2c8c99;
+	border-radius: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#backbutton a:hover {
+	background-color: #2e1f27;
+}
