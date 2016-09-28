@@ -49,7 +49,7 @@ $array['my-html-blog'] = new blogPost('My HTML Blog', 'text', 'This is my blog p
 		<a href="aboutme.html"> About Me </a>
 		<a href="portfoliopage.html"> Portfolio </a>
 		<a href="contactpage.html"> Contact </a>
-		<a href="bloglistpage.html"> Blog</a>
+		<a href="bloglistpage.php"> Blog</a>
 	</div>
 	
 	<div id="header">
@@ -71,7 +71,7 @@ The website also contains the pages about me and contact. The about me page cont
 	<div id="homepageblog">
 		<?php
 			foreach($array as $key => $value) {
-				echo '<div class="blogsnippet" id="top"> <h5>' . $value -> title . '</h5> <h6>' . $value -> date . ' - ' . $value -> author . '</h6> <br><br>  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="articalpage.php"> Read More...</a> </p> </div>';
+				echo '<div class="blogsnippet" id="top"> <h5>' . $value -> title . '</h5> <h6>' . $value -> date . ' - ' . $value -> author . '</h6> <br><br>  <p>' . $value->description . ' <a href="articalpage.php?blog=' . $key . '"> Read More...</a> </p> </div>';
 //					'<div><a href=articalpage.php?blog=' . $key . '>' . $value->getTitle() . '</a></div>';
 			}
 		?>
