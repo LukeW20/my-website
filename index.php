@@ -27,10 +27,6 @@ $array['my-java-script-blog'] = new blogPost('My Java-Script Blog', 'text', 'Thi
 $array['my-html-blog'] = new blogPost('My HTML Blog', 'text', 'This is my blog post about...', '28th Sept 2016', 'Luke Winsley');
 ?>
 
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
