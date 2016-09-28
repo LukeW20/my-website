@@ -1,4 +1,7 @@
 <?php
+
+require('get_explode_content.php');
+
 $array = [];
 
 class blogPost {
@@ -8,10 +11,10 @@ class blogPost {
     public $date;
     public $author;
 
-    public function __construct($title, $text, $description, $date, $author) {
+    public function __construct($title, $text, $date, $author) {
         $this->title = $title;
         $this->text = $text;
-        $this->description = $description;
+        $this->description = substr($text, 0, 300);
         $this->date = $date;
         $this->author = $author;
     }
@@ -22,10 +25,10 @@ class blogPost {
 }
 
 
-$array['my-php-blog'] = new blogPost('My PHP Blog','text', 'This is my blog post about...', '28th Sept 2016', 'Luke Winsley');
-$array['my-java-script-blog'] = new blogPost('My Java-Script Blog', 'text', 'This is my blog post about...', '28th Sept 2016', 'Luke Winsley');
-$array['my-html-blog'] = new blogPost('My HTML Blog', 'text', 'This is my blog post about...', '28th Sept 2016', 'Luke Winsley');
-$array['my-datebases-blog'] = new blogpost ('My Database Blog', 'text', 'This is my blog about...', '28th Sept 2016', 'Luke Winsley');
+$array['my-php-blog'] = new blogPost('My PHP Blog', $blogtext[0], '28th Sept 2016', 'Luke Winsley');
+$array['my-java-script-blog'] = new blogPost('My Java-Script Blog', $blogtext[1], '28th Sept 2016', 'Luke Winsley');
+$array['my-html-blog'] = new blogPost('My HTML Blog', $blogtext[2], '28th Sept 2016', 'Luke Winsley');
+$array['my-datebases-blog'] = new blogpost ('My Database Blog', $blogtext[3], '28th Sept 2016', 'Luke Winsley');
 ?>
 
 
@@ -68,10 +71,7 @@ $array['my-datebases-blog'] = new blogpost ('My Database Blog', 'text', 'This is
 
             <?php
             foreach($array as $key => $value) {
-                echo '<div class="blogtext"> <h2>' . $value -> title .' </h2> <h4>' . $value -> date .' - ' . $value -> author . '</h4> <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus ultricies lectus,
-                nec convallis elit pulvinar et. Quisque pulvinar porttitor tellus, eget imperdiet augue.
-                Ut in quam sed augue faucibus molestie. Vestibulum urna nulla, consequat quis interdum vel, posuere et sem. Curabitur sed ex pulvinar, blandit mi blandit, varius purus.
-                Aliquam suscipit quam hendrerit ipsum lobortis, in fermentum nisl feugiat. Donec at sollicitudin turpis, et rutrum neque. <a href="articalpage.php"> Read More... </a> </p> </div>';
+                echo '<div class="blogtext"> <h2>' . $value -> title .' </h2> <h4>' . $value -> date .' - ' . $value -> author . '</h4> <p>' . $value -> description . '</p> <a href="articalpage.php?blog=' . $key . '"> Read More... </a> </p> </div>';
 //					'<div><a href=articalpage.php?blog=' . $key . '>' . $value->getTitle() . '</a></div>';
             }
             ?>
