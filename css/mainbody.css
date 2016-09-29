@@ -40,6 +40,8 @@ body {
 	width: 480px;
 	margin: 10px 0 10px 10px;
 	line-height: 50%;
+	overflow: hidden;
+	font-size: 13px;
 }
 
 .blogsnippet h5 {
