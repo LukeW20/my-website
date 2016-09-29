@@ -44,22 +44,27 @@ body {
 	font-size: 13px;
 }
 
-.blogsnippet h5 {
-	margin: 15px;
+.blogsnippet h2 {
+	margin: 12px;
 	font-size: 20px;
 }
 
-.blogsnippet h6{
-	margin: 0 0 0 15px;
+.blogsnippet h4{
+	margin: 0 0 5px 15px;
 	font-size: 15px;
 }
 
 .blogsnippet p {
-	margin: 0 0 0 15px;
+	margin: 5px 0 0 15px;
 	font-size: 15px;
+	text-overflow: ellipsis;
+	line-height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
 }
 
-.blogsnippet a{
+.blogsnippet a {
+	margin: 10px 0 0 15px;
 	text-decoration: none;
 }
 .blogsnippet#top {
@@ -398,9 +403,12 @@ body {
 	margin: 0 0 0 15px;
 	line-height: 120%;
 	color: #393D3F;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .blogtext a {
+	margin: 0 0 0 15px;
 	text-decoration: none;
 }
 
