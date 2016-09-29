@@ -35,7 +35,7 @@ $blogpost = $blogposts[$id];
         <?php
         echo "<h1>" . $blogpost->title . "</h1>";
         ?>
-        </div>
+    </div>
 
     <div id="articalcontainer">
         <div id="articalpageimg"> <img src="images/blogphoto.jpg" alt="Blogger Essentials"> </div>
