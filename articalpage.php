@@ -2,36 +2,9 @@
 
 $id = $_GET['blog'];
 
-require('get_explode_content.php');
+require('includes/getBlogPosts.php');
 
-$array = [];
-
-class blogPost {
-    public $title;
-    public $text;
-    public $description;
-    public $date;
-    public $author;
-
-    public function __construct($title, $text, $date, $author) {
-        $this->title = $title;
-        $this->text = $text;
-        $this->description = substr($text, 0, 200);
-        $this->date = $date;
-        $this->author = $author;
-    }
-
-    public function getTitle() {
-        return $this->title;
-    }
-}
-
-$array['my-php-blog'] = new blogPost('My PHP Blog',$blogtext[0], '28th Sept 2016', 'Luke Winsley');
-$array['my-java-script-blog'] = new blogPost('My Java-Script Blog', $blogtext[1], '28th Sept 2016', 'Luke Winsley');
-$array['my-html-blog'] = new blogPost('My HTML Blog', $blogtext[2], '28th Sept 2016', 'Luke Winsley');
-$array['my-datebases-blog'] = new blogpost ('My Database Blog', $blogtext[3], '28th Sept 2016', 'Luke Winsley');
-
-$blogpost = $array[$id];
+$blogpost = $blogposts[$id];
 ?>
 
 

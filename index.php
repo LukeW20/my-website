@@ -1,30 +1,5 @@
 <?php
-$array = [];
-
-class blogPost {
-	public $title;
-	public $text;
-	public $description;
-	public $date;
-	public $author;
-
-	public function __construct($title, $text, $description, $date, $author) {
-		$this->title = $title;
-		$this->text = $text;
-		$this->description = $description;
-		$this->date = $date;
-		$this->author = $author;
-	}
-
-	public function getTitle() {
-		return $this->title;
-	}
-}
-
-
-$array['my-php-blog'] = new blogPost('My PHP Blog','text', 'This is my blog post about...', '28th Sept 2016', 'Luke Winsley');
-$array['my-java-script-blog'] = new blogPost('My Java-Script Blog', 'text', 'This is my blog post about...', '28th Sept 2016', 'Luke Winsley');
-$array['my-html-blog'] = new blogPost('My HTML Blog', 'text', 'This is my blog post about...', '28th Sept 2016', 'Luke Winsley');
+require('includes/getBlogPosts.php');
 ?>
 
 <!DOCTYPE html>
@@ -66,10 +41,17 @@ The website also contains the pages about me and contact. The about me page cont
 	</div>
 	<div id="homepageblog">
 		<?php
-			foreach($array as $key => $value) {
+		$i = 0;
+			foreach($blogposts as $key => $value) {
+				$i++;
+				if ($i > 3) {
+					break;
+				}
 				echo '<div class="blogsnippet" id="top"> <h5>' . $value -> title . '</h5> <h6>' . $value -> date . ' - ' . $value -> author . '</h6> <br><br>  <p>' . $value->description . ' <a href="articalpage.php?blog=' . $key . '"> Read More...</a> </p> </div>';
-//					'<div><a href=articalpage.php?blog=' . $key . '>' . $value->getTitle() . '</a></div>';
+//
+//		'<div><a href=articalpage.php?blog=' . $key . '>' . $value->getTitle() . '</a></div>';
 			}
+
 		?>
 	</div>
 	</div>
