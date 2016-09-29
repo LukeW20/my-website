@@ -49,8 +49,10 @@ require('includes/getBlogPosts.php');
     </div>
 </div>
 <div id="footer">
-    <div id="footercontent"> <p> <a href="mailto:lukewinsley@gmail.com"> Email: lukewinsley@gmail.com </a> <br>
-        <a href="https://mobile.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a> </p>
+    <div id="footercontent">
+        <p> <a href="mailto:lukewinsley@gmail.com"> Email: lukewinsley@gmail.com </a> <br>
+        <a href="https://mobile.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a>
+        </p>
     </div>
     <div id="copyright"> Copyrighted By Luke Winsley </div>
 </div>
