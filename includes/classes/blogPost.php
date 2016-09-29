@@ -1,11 +1,4 @@
 <?php
-
-/**
- * Created by PhpStorm.
- * User: academy
- * Date: 29/09/2016
- * Time: 09:11
- */
 class blogPost {
     public $title;
     public $text;
