@@ -24,7 +24,7 @@ function getBlogListing($blogposts, $class, $limitBlogPosts = 9999999999){
         if ($i > $limitBlogPosts) {
             break;
         }
-        $x.= '<div class=' . $class . '> <h2>' . $value -> title .' </h2> <h4>' . $value -> date .' - ' . $value -> author . '</h4> <p>' . $value -> description . '<a href="articalpage.php?blog=' . $key . '"> Read More... </a> </p> </div>';
+        $x.= '<div class=' . $class . '> <h2>' . $value -> title .' </h2> <h4>' . $value -> date .' - ' . $value -> author . '</h4> <p>' . $value -> description . '<a href="articalpage.php?blog=' . $key . '"> ...Read More... </a> </p> </div>';
     }
     return $x;
 }
