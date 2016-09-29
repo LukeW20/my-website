@@ -9,7 +9,7 @@ class blogPost {
     public function __construct($title, $text, $date, $author) {
         $this->title = $title;
         $this->text = $text;
-        $this->description = substr($text, 0, 300);
+        $this->description = substr($text, 0, 350);
         $this->date = $date;
         $this->author = $author;
     }
