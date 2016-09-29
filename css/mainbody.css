@@ -68,14 +68,6 @@ body {
 	border-radius: 25px 25px 0 0;
 }
 
-.blogsnippet#bottom {
-	-webkit-border-radius: 0 0 25px 25px;
-	-moz-border-radius: 0 0 25px 25px;
-	-m-border-radius: 0 0 25px 25px;
-	-o-border-radius: 0 0 25px 25px;
-	border-radius: 0 0 25px 25px;
-}
-
 #mainimages {
 	border: 3px solid black;	
 	width: 290px;
