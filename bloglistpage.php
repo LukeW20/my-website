@@ -43,10 +43,7 @@ require('includes/getBlogPosts.php');
         <div id="blogcontent">
 
             <?php
-            foreach($blogposts as $key => $value) {
-                echo '<div class="blogtext"> <h2>' . $value -> title .' </h2> <h4>' . $value -> date .' - ' . $value -> author . '</h4> <p>' . $value -> description . '<a href="articalpage.php?blog=' . $key . '"> Read More... </a> </p> </div>';
-//					'<div><a href=articalpage.php?blog=' . $key . '>' . $value->getTitle() . '</a></div>';
-            }
+                echo getBlogListing($blogposts, blogtext);
             ?>
         </div>
     </div>

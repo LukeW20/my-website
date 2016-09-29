@@ -41,16 +41,8 @@ The website also contains the pages about me and contact. The about me page cont
 	</div>
 	<div id="homepageblog">
 		<?php
-		$i = 0;
-			foreach($blogposts as $key => $value) {
-				$i++;
-				if ($i > 3) {
-					break;
-				}
-				echo '<div class="blogsnippet" id="top"> <h5>' . $value -> title . '</h5> <h6>' . $value -> date . ' - ' . $value -> author . '</h6> <br><br>  <p>' . $value->description . ' <a href="articalpage.php?blog=' . $key . '"> Read More...</a> </p> </div>';
-//
-//		'<div><a href=articalpage.php?blog=' . $key . '>' . $value->getTitle() . '</a></div>';
-			}
+
+		echo getBlogListing($blogposts, blogsnippet, 3);
 
 		?>
 	</div>
