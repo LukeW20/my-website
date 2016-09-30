@@ -412,14 +412,14 @@ body {
 	text-decoration: none;
 }
 
-#articalcontainer {
+#articlecontainer {
 	width: 900px;
 	height: 882px;
 	margin: auto;
 	overflow: auto;
 }
 
-#articalpageimg {
+#articlepageimg {
 	border: 3px solid black;
 	width: 200px;
 	height: 200px;
@@ -432,7 +432,7 @@ body {
 	border-radius: 25px;
 }
 
-#articalpageimg img{
+#articlepageimg img{
 	-webkit-border-radius: 25px;
 	-moz-border-radius: 25px;
 	-m-border-radius: 25px;
@@ -440,7 +440,7 @@ body {
 	border-radius: 25px;
 }
 
-#articalpagecontent {
+#articlepagecontent {
 	border: 3px solid black;
 	width: 894px;
 	height: 600px;
@@ -453,11 +453,11 @@ body {
 	border-radius: 25px;
 }
 
-#articalpagecontent h3 {
+#articlepagecontent h3 {
 	margin: 0 0 0 15px;
 }
 
-#articalpagecontent p {
+#articlepagecontent p {
 	margin: 15px 15px 0 15px;
 }
 

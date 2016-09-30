@@ -1,7 +1,7 @@
 <?php
 require('classes/blogPost.php');
 
-$blogTextTemp = file_get_contents(__DIR__ . '/../articalstorage.txt');
+$blogTextTemp = file_get_contents(__DIR__ . '/../articlestorage.txt');
 $blogtext = explode('*', $blogTextTemp);
 
 $blogposts = [];
@@ -24,7 +24,7 @@ function getBlogListing($blogposts, $class, $limitBlogPosts = 9999999999){
         if ($i > $limitBlogPosts) {
             break;
         }
-        $x.= '<div class=' . $class . '> <h2>' . $value -> title .' </h2> <h4>' . $value -> date .' - ' . $value -> author . '</h4> <p>' . $value -> description . '</p> <a href="articalpage.php?blog=' . $key . '"> Read More... </a> </div>';
+        $x.= '<div class=' . $class . '> <h2>' . $value -> title .' </h2> <h4>' . $value -> date .' - ' . $value -> author . '</h4> <p>' . $value -> description . '</p> <a href="articlepage.php?blog=' . $key . '"> Read More... </a> </div>';
     }
     return $x;
 }
