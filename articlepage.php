@@ -44,7 +44,7 @@ $blogpost = $blogposts[$id];
         ?>
     </div>
     <div id="backbutton">
-        <div> <a href="bloglistpage.php"> Back </a> </div>
+        <div> <a href="bloglistpage.php"> Blog List </a> </div>
     </div>
     </div>
     <div id="footer">
