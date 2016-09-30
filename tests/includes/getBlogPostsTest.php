@@ -1,9 +1,11 @@
 <?php
 
-require '../../includes/getBlogPosts.php';
+require_once '../../includes/getBlogPosts.php';
 
 class getBlogPostTest extends PHPUnit_Framework_TestCase{
-    public function testGetBlogListinggood(){
+
+    public function testGetBlogListinGgood()
+    {
         $blogtext = ['ssajddajdjdh'];
         $blogposts['blog'] = new blogPost('My Blog', $blogtext[0], '28th Sept 2016', 'Luke Winsley');
         $variable = getBlogListing($blogposts, 'class', 99);
@@ -11,7 +13,7 @@ class getBlogPostTest extends PHPUnit_Framework_TestCase{
         $this->assertEquals($variable, $variable2);
     }
 
-    public function testGetBlogListingbad()
+    public function testGetBlogListingBad()
     {
         $blogtext = ['ssajddajdjdh'];
         $blogposts['blog'] = new blogPost('My Blog', $blogtext[0], '28th Sept 2016', 'Luke Winsley');
@@ -20,5 +22,3 @@ class getBlogPostTest extends PHPUnit_Framework_TestCase{
         $this->assertNotEquals($variable, $variable2);
     }
 }
-
-
