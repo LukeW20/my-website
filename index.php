@@ -1,4 +1,8 @@
-<!doctype html>
+<?php
+require('includes/getBlogPosts.php');
+?>
+
+<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
@@ -12,10 +16,11 @@
 <div id="wrapper">	
 	<div id="navbar">
 		<div id="logo"> <img src="images/logo.png" alt="Logo"> </div>
-		<a href="index.html"> Home </a>
+		<a href="index.php"> Home </a>
 		<a href="aboutme.html"> About Me </a>
 		<a href="portfoliopage.html"> Portfolio </a>
 		<a href="contactpage.html"> Contact </a>
+		<a href="bloglistpage.php"> Blog</a>
 	</div>
 	
 	<div id="header">
@@ -31,17 +36,20 @@
 The website also contains the pages about me and contact. The about me page contains details about myself so that you can find out a bit about me and my background. The contact page contains my contact details if you would like to get in contact with me.</p> </div>
 		</div>
 	
-	<div id="mainimages"> <img src="images/pulteneybridge.jpg" alt="Pulteney Bridge, Bath"> 
-	<img src="images/lake.jpg" alt="Lake surrounded with trees"> 
-	</div>
-	<div id="homepageimg"> 
-		<img src="images/phonebox.jpg" alt="Traditonal Red Phone Box">
-	</div>
+		<div id="mainimages">
+			<img src="images/pulteneybridge.jpg" alt="Pulteney Bridge, Bath">
+			<img src="images/lake.jpg" alt="Lake surrounded with trees">
+		</div>
+		<div id="homepageblog">
+			<?php
+				echo getBlogListing($blogposts, blogsnippet, 3);
+			?>
+		</div>
 	</div>
 </div>		
 	<div id="footer">
 		<div id="footercontent"> <p> <a href="mailto:lukewinsley@gmail.com"> Email: lukewinsley@gmail.com </a> <br>
-			<a href="https://mobile.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a> </p>
+			<a href="https://www.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a> </p>
 		</div>
 		<div id="copyright"> Copyrighted By Luke Winsley </div>
 	</div>
