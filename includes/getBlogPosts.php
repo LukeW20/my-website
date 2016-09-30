@@ -13,9 +13,6 @@ $blogposts['my-datebases-blog'] = new blogpost ('My Database Blog', $blogtext[3]
 
 $blogposts = array_reverse($blogposts );
 
-
-
-
 function getBlogListing($blogposts, $class, $limitBlogPosts = 9999999999){
     $i = 0;
     $x = '';
