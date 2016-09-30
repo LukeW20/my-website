@@ -1,7 +1,7 @@
 <?php
-require('includes/classes/blogPost.php');
+require('classes/blogPost.php');
 
-$blogTextTemp = file_get_contents('articalstorage.txt');
+$blogTextTemp = file_get_contents(__DIR__ . '/../articalstorage.txt');
 $blogtext = explode('*', $blogTextTemp);
 
 $blogposts = [];
