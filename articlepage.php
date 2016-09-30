@@ -37,10 +37,10 @@ $blogpost = $blogposts[$id];
         ?>
     </div>
 
-    <div id="articalcontainer">
-        <div id="articalpageimg"> <img src="images/blogphoto.jpg" alt="Blogger Essentials"> </div>
+    <div id="articlecontainer">
+        <div id="articlepageimg"> <img src="images/blogphoto.jpg" alt="Blogger Essentials"> </div>
         <?php
-                 echo "<div id='articalpagecontent'> <h3>" . $blogpost->date . " - " . $blogpost->author . "</h3> <p>$blogpost->text</p> </div>";
+                 echo "<div id='articlepagecontent'> <h3>" . $blogpost->date . " - " . $blogpost->author . "</h3> <p>$blogpost->text</p> </div>";
         ?>
     </div>
     <div id="backbutton">
