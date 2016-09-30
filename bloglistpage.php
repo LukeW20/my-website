@@ -1,9 +1,5 @@
 <?php
-
 require('includes/getBlogPosts.php');
-
-
-
 ?>
 
 <!doctype html>
@@ -41,7 +37,6 @@ require('includes/getBlogPosts.php');
             <div class="bloglistpictures"> <p> Image </p> </div>
         </div>
         <div id="blogcontent">
-
             <?php
                 echo getBlogListing($blogposts, blogtext);
             ?>
@@ -50,8 +45,9 @@ require('includes/getBlogPosts.php');
 </div>
 <div id="footer">
     <div id="footercontent">
-        <p> <a href="mailto:lukewinsley@gmail.com"> Email: lukewinsley@gmail.com </a> <br>
-        <a href="https://www.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a>
+        <p>
+            <a href="mailto:lukewinsley@gmail.com"> Email: lukewinsley@gmail.com </a> <br>
+            <a href="https://www.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a>
         </p>
     </div>
     <div id="copyright"> Copyrighted By Luke Winsley </div>
