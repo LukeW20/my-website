@@ -36,16 +36,15 @@ require('includes/getBlogPosts.php');
 The website also contains the pages about me and contact. The about me page contains details about myself so that you can find out a bit about me and my background. The contact page contains my contact details if you would like to get in contact with me.</p> </div>
 		</div>
 	
-	<div id="mainimages"> <img src="images/pulteneybridge.jpg" alt="Pulteney Bridge, Bath"> 
-	<img src="images/lake.jpg" alt="Lake surrounded with trees"> 
-	</div>
-	<div id="homepageblog">
-		<?php
-
-		echo getBlogListing($blogposts, blogsnippet, 3);
-
-		?>
-	</div>
+		<div id="mainimages">
+			<img src="images/pulteneybridge.jpg" alt="Pulteney Bridge, Bath">
+			<img src="images/lake.jpg" alt="Lake surrounded with trees">
+		</div>
+		<div id="homepageblog">
+			<?php
+				echo getBlogListing($blogposts, blogsnippet, 3);
+			?>
+		</div>
 	</div>
 </div>		
 	<div id="footer">
