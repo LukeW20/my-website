@@ -33,14 +33,14 @@ $blogpost = $blogposts[$id];
 
     <div id="header">
         <?php
-        echo "<h1>" . $blogpost->title . "</h1>";
+            echo "<h1>" . $blogpost->title . "</h1>";
         ?>
     </div>
 
     <div id="articlecontainer">
         <div id="articlepageimg"> <img src="images/blogphoto.jpg" alt="Blogger Essentials"> </div>
         <?php
-                 echo "<div id='articlepagecontent'> <h3>" . $blogpost->date . " - " . $blogpost->author . "</h3> <p>$blogpost->text</p> </div>";
+            echo "<div id='articlepagecontent'> <h3>" . $blogpost->date . " - " . $blogpost->author . "</h3> <p>$blogpost->text</p> </div>";
         ?>
     </div>
     <div id="backbutton">
@@ -48,8 +48,11 @@ $blogpost = $blogposts[$id];
     </div>
     </div>
     <div id="footer">
-        <div id="footercontent"> <p> <a href="mailto:lukewinsley@gmail.com"> Email: lukewinsleygmail.com </a> <br>
-            <a href="https://www.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a> </p>
+        <div id="footercontent">
+            <p>
+                <a href="mailto:lukewinsley@gmail.com"> Email: lukewinsleygmail.com </a> <br>
+                <a href="https://www.twitter.com/LukeWinsley"> Twitter: @LukeWinsley </a>
+            </p>
         </div>
         <div id="copyright"> Copyrighted By Luke Winsley </div>
     </div>
